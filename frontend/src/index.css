@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg:#0f1117; --bg2:#161b27; --bg3:#1c2235;
+  --card:#1e2536; --card2:#252d3d;
+  --border:#2a3347; --border2:#3a4a62;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#5a6a85;
+  --blue:#4f8ef7; --blue2:#3a7af5;
+  --teal:#2dd4bf; --green:#22c55e;
+  --amber:#f59e0b; --red:#ef4444;
+  --purple:#a855f7; --pink:#ec4899;
+  --grad:linear-gradient(135deg,#4f8ef7,#a855f7);
+  --grad2:linear-gradient(135deg,#2dd4bf,#4f8ef7);
+  --radius:12px; --radius-sm:8px;
+  --shadow:0 4px 24px rgba(0,0,0,0.4);
+  --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --sidebar-width:240px; --topbar-height:58px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:var(--bg2)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:10px}
+::selection{background:rgba(79,142,247,0.25);color:var(--text)}
+a{color:var(--blue);text-decoration:none}
+button,a,input,select,textarea{transition:all 0.15s ease}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes slideUp{from{transform:translateY(16px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes recordPulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,0.4)}50%{box-shadow:0 0 0 16px rgba(239,68,68,0)}}
+@keyframes waveAnim{0%,100%{transform:scaleY(0.3)}50%{transform:scaleY(1)}}
